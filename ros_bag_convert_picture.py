@@ -2,8 +2,11 @@
 # -*- coding: utf-8 -*-
 
 # Copyright 2016 Massachusetts Institute of Technology
+# Author: Jimmy Majumder 
 
-"""Extract images from a rosbag.
+
+"""Extract images from a rosbag. If you have any rosbag video and if you want to use images from video then this code will help you.
+just use this code in the same folder where you should keep rosbag data. Then run it and you will get a new folder. 
 """
 
 import os
