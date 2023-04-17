@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # Copyright 2016 Massachusetts Institute of Technology
+#Author: Jimmy Majumder 
 
 """Extract images from a rosbag.
 """
