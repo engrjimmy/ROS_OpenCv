@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import rospy
 import cv2
 from sensor_msgs.msg import Image
@@ -22,8 +24,11 @@ def main():
             radius = int(height * scaling_factor / 2)
         cv2.circle(frame, (center_x, center_y), radius, (0, 255, 0), 2)
         pub.publish(bridge.cv2_to_imgmsg(frame, "bgr8"))
+        cv2.imshow("Camera view", frame)
+        cv2.waitKey(1)
         rate.sleep()
     cap.release()
+    cv2.destroyAllWindows()
 
 if __name__ == '__main__':
     main()
