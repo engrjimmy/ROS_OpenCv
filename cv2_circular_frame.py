@@ -12,7 +12,7 @@ def main():
         circule_scaling = 0.5
 
         if width <height:
-            radius = int(hwidth * circule_scaling /2 )
+            radius = int(width * circule_scaling /2 )
         else:
             radius = int(height * circule_scaling/2)
         cv2.circle(frame, (center_x, center_y), radius, (0, 100, 0), 2)
